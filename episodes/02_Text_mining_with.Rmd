@@ -2,26 +2,18 @@
 title: "Episode 2 tidytext, stopwords, and sentiment analysis"
 teaching: 0
 exercises: 0
-questions:
-- "How do we prepare text for analysis and measure the sentiment of the text?"
-objectives:
-- "Using specific packages to perform text preparation and sentiment analysis"
-keypoints:
-- "All natural language texts must be prepared for analysis"
----
 
+---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- How do you write a lesson using R Markdown and `{sandpaper}`?
+- "How do we prepare text for analysis and measure the sentiment of the text?"
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain how to use markdown with the new lesson template
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
-
+- "Using specific packages to perform text preparation and sentiment analysis"
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
@@ -183,9 +175,6 @@ kina_blokke_sentiment_value %>%
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
+- "All natural language texts must be prepared for analysis"
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
