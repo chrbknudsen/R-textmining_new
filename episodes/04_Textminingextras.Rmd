@@ -11,10 +11,7 @@ keypoints:
 ---
 
 
-```{r, include = FALSE}
-source("../bin/chunk-options.R")
-knitr_fig_path("03-")
-```
+
 
 ## Stopwords for other languages
 Stopword lists are available for a range of European languages via the tm library. See documentation on [https://cran.r-project.org/web/packages/tm/tm.pdf p. 38](https://cran.r-project.org/web/packages/tm/tm.pdf p. 38)
