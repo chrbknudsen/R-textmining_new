@@ -2,15 +2,19 @@
 title: "Episode 2 tidytext, stopwords, and sentiment analysis"
 teaching: 0
 exercises: 0
-questions:
-- "How do we prepare text for analysis and measure the sentiment of the text?"
-objectives:
-- "Using specific packages to perform text preparation and sentiment analysis"
-keypoints:
-- "All natural language texts must be prepared for analysis"
+
 ---
 
+:::::::::::::::::::::::::::::::::::::: questions 
 
+- "How do we prepare text for analysis and measure the sentiment of the text?"
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: objectives
+
+- "Using specific packages to perform text preparation and sentiment analysis"
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 
@@ -211,3 +215,8 @@ kina_blokke_sentiment_value %>%
 Error in eval(expr, envir, enclos): object 'kina_blokke_sentiment_value' not found
 ```
 
+::::::::::::::::::::::::::::::::::::: keypoints 
+
+- "All natural language texts must be prepared for analysis"
+
+::::::::::::::::::::::::::::::::::::::::::::::::

@@ -10,6 +10,18 @@ keypoints:
 - "Stemming can be useful for Natural Language Processing; Stopword lists are available for many languages"
 ---
 
+:::::::::::::::::::::::::::::::::::::: questions 
+
+- How do you write a lesson using R Markdown and `{sandpaper}`?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: objectives
+
+- Explain how to use markdown with the new lesson template
+- Demonstrate how to include pieces of code, figures, and nested challenge blocks
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 
@@ -78,3 +90,11 @@ Hvitfeldt, E., & Silge, J. (2021). Supervised Machine Learning for Text Analysis
 David Robinson, & Julia Silge. (2017). Text Mining with R. O’Reilly Media, Inc.
 
 
+::::::::::::::::::::::::::::::::::::: keypoints 
+
+- Use `.md` files for episodes when you want static content
+- Use `.Rmd` files for episodes when you need to generate output
+- Run `sandpaper::check_lesson()` to identify any issues with your lesson
+- Run `sandpaper::build_lesson()` to preview your lesson locally
+
+::::::::::::::::::::::::::::::::::::::::::::::::

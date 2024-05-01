@@ -3,13 +3,22 @@ title: "Episode 1 Loading data"
 teaching: 0
 exercises: 0
 questions:
-- "What is text mining and how do we load in the dataset?"
+
 objectives:
-- "To be introduced to text mining and loading in text data"
+
 keypoints:
-- "Packages must be installed and loaded in, and dataset must be loaded in by typing commands"
 ---
 
+:::::::::::::::::::::::::::::::::::::: questions 
+
+- "What is text mining and how do we load in the dataset?"
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: objectives
+
+- "To be introduced to text mining and loading in text data"
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 
@@ -129,3 +138,8 @@ kina <- read_delim("data/kina.txt")
 ```
 
 
+::::::::::::::::::::::::::::::::::::: keypoints 
+
+- "Packages must be installed and loaded in, and dataset must be loaded in by typing commands"
+
+::::::::::::::::::::::::::::::::::::::::::::::::
