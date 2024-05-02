@@ -101,7 +101,7 @@ Now that the dataset was properly filtered to parliament speeches about China, w
 ```{r, eval = TRUE,  message = FALSE, purl = FALSE}
 library(tidyverse)
 
-kina <- read_delim("../data/kina.txt")
+kina <- read_delim("data/kina.txt")
 ```
 
 *To easily download the dataset there are a couple of steps.

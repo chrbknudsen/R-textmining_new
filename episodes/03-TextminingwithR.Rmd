@@ -38,7 +38,7 @@ stopwords_dansk <- tibble(word = stopwords(kind = "danish"))
 
 download.file("https://raw.githubusercontent.com/swillerhansen/R-textmining/main/data/AFINN%20dansk.txt", "data/AFINN_dansk.txt", mode = "wb")
 
-AFINN_dansk <- read_csv("../data/AFINN_dansk.csv")
+AFINN_dansk <- read_csv("data/AFINN_dansk.csv")
 
 kina_tidy <- kina %>% 
   unnest_tokens(word, Text) #tidytext tokenization
@@ -91,7 +91,7 @@ download.file("https://raw.githubusercontent.com/KUBDatalab/R-textmining/main/da
 ```
 
 ```{r eval = TRUE, , message = FALSE, echo = FALSE}
-iso_stopwords <- read_csv("../data/iso_stopwords.csv")
+iso_stopwords <- read_csv("data/iso_stopwords.csv")
 ```
 
 ```{r eval = FALSE}
