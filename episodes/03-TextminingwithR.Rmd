@@ -1,26 +1,20 @@
 ---
-title: "Episode 3 word frequency analysis"
+title: "Word frequency analysis"
 teaching: 0
 exercises: 0
-questions:
-- "How can we find the most frequent terms from each party?"
-objectives:
-- "Learning how to analyze term frequency and visualize it"
-keypoints:
-- "Custom stopword list may be necessary depending on the context"
 ---
 
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- How do you write a lesson using R Markdown and `{sandpaper}`?
+- "How can we find the most frequent terms from each party?"
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain how to use markdown with the new lesson template
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
+- "Learning how to analyze term frequency and visualize it"
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -214,9 +208,7 @@ kina_tidy_tf_idf_top_10 %>%
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
+- "Custom stopword list may be necessary depending on the context"
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
