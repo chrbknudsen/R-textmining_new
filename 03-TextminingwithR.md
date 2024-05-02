@@ -1,26 +1,20 @@
 ---
-title: "Episode 3 word frequency analysis"
+title: "Word frequency analysis"
 teaching: 0
 exercises: 0
-questions:
-- "How can we find the most frequent terms from each party?"
-objectives:
-- "Learning how to analyze term frequency and visualize it"
-keypoints:
-- "Custom stopword list may be necessary depending on the context"
 ---
 
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- How do you write a lesson using R Markdown and `{sandpaper}`?
+- "How can we find the most frequent terms from each party?"
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain how to use markdown with the new lesson template
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
+- "Learning how to analyze term frequency and visualize it"
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -39,10 +33,6 @@ library(tm)
 
 ```error
 Error: '../data/kina.txt' does not exist in current working directory ('/home/runner/work/R-textmining_new/R-textmining_new/site/built').
-```
-
-```error
-Error: '../data/AFINN_dansk.csv' does not exist in current working directory ('/home/runner/work/R-textmining_new/R-textmining_new/site/built').
 ```
 
 ```error
@@ -101,9 +91,6 @@ download.file("https://raw.githubusercontent.com/KUBDatalab/R-textmining/main/da
 ```
 
 
-```error
-Error: '../data/iso_stopwords.csv' does not exist in current working directory ('/home/runner/work/R-textmining_new/R-textmining_new/site/built').
-```
 
 
 ```r
@@ -260,9 +247,7 @@ Error in eval(expr, envir, enclos): object 'kina_tidy_tf_idf_top_10' not found
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
+- "Custom stopword list may be necessary depending on the context"
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
