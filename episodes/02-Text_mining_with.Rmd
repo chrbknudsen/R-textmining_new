@@ -1,5 +1,5 @@
 ---
-title: "Episode 2 tidytext, stopwords, and sentiment analysis"
+title: "Tidytext, stopwords, and sentiment analysis"
 teaching: 0
 exercises: 0
 

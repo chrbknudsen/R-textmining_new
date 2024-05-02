@@ -1,5 +1,5 @@
 ---
-title: "Episode 1 Loading data"
+title: "Loading data"
 teaching: 0
 exercises: 0
 questions:
