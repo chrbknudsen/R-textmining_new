@@ -1,23 +1,22 @@
 ---
-title: "Episode 2 tidytext, stopwords, and sentiment analysis"
+title: "Tidytext, stopwords, and sentiment analysis"
 teaching: 0
 exercises: 0
-questions:
-- "How do we prepare text for analysis and measure the sentiment of the text?"
-objectives:
-- "Using specific packages to perform text preparation and sentiment analysis"
-keypoints:
-- "All natural language texts must be prepared for analysis"
+
 ---
 
+:::::::::::::::::::::::::::::::::::::: questions 
+
+- "How do we prepare text for analysis and measure the sentiment of the text?"
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: objectives
+
+- "Using specific packages to perform text preparation and sentiment analysis"
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-## R Markdown
 ## Loading our libraries and reading our data
 Let us now load our libraries
 ```{r, eval = TRUE, message = FALSE}
@@ -28,9 +27,7 @@ library(tm)
 
 
 ```{r, eval = TRUE,  message = FALSE, purl = FALSE, echo = FALSE}
-library(tidyverse)
-
-kina <- read_delim("../data/kina.txt")
+kina <- read_delim("data/kina.txt")
 ```
 
 ## Understanding our data
@@ -84,7 +81,7 @@ download.file("https://raw.githubusercontent.com/KUBDatalab/R-textmining/main/da
 Now we read need to read the AFINN Index into a tibble and rename the columns
 
 ```{r eval = TRUE, message = FALSE, echo = FALSE}
-AFINN_dansk <- read_csv("../data/AFINN_dansk.csv")
+AFINN_dansk <- read_csv("data/AFINN_dansk.csv")
 ```
 
 
@@ -169,3 +166,8 @@ kina_blokke_sentiment_value %>%
   labs(x= "Blok")
 ```
 
+::::::::::::::::::::::::::::::::::::: keypoints 
+
+- "All natural language texts must be prepared for analysis"
+
+::::::::::::::::::::::::::::::::::::::::::::::::

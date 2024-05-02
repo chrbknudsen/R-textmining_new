@@ -60,10 +60,10 @@ contact: 'kubdatalab@kb.dk'
 # Order of episodes in your lesson
 episodes: 
 - introduction.Rmd
-- 01TextminingwithREpisode1.Rmd
-- 02_Text_mining_with.Rmd
-- 03TextminingwithREpisode3.Rmd
-- 04_Textminingextras.Rmd
+- 01-TextminingwithR.Rmd
+- 02-Text_mining_with.Rmd
+- 03-TextminingwithR.Rmd
+- 04-Textminingextras.Rmd
 
 # Information for Learners
 learners: 
