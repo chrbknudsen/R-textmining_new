@@ -4,7 +4,7 @@ library(guardianapi)
 # kør og giv den api-nøglen i console
 guardianapi::gu_api_key()
 
-
+#obama
 
 obama <- guardianapi::gu_content(query = "Obama", from_date = "2009-01-20", to_date = "2009-01-20")
 
@@ -30,3 +30,36 @@ obama %>%
               )) %>% 
   mutate(id = row_number()) %>%
   write_csv("episodes/data/obama.csv")  
+
+
+
+#bush
+
+trump <- guardianapi::gu_content(query = "Trump", from_date = "2017-01-20", to_date = "2017-01-20")
+ 
+
+midlertidig <- 
+  trump %>% 
+  filter(!(type %in% c("gallery", "audio", "video", "liveblog"))) %>% 
+  filter(!(section_id %in% c("tv-and-radio", 
+                             "film",
+                             "football",
+                             "stage",
+                             "theguardian",
+                             "lifeandstyle",
+                             "sport",
+                             "media",
+                             "travel",
+                             "music",
+                             "artanddesign",
+                             "books",
+                             "fashion"))) %>% 
+   select(-c(type, section_name, web_url, api_url, 
+            tags, is_hosted, pillar_id, main, wordcount,
+            production_office, is_premoderated,
+            last_modified:show_in_related_content,
+            thumbnail:is_live, char_count:comment_close_date,
+            section_id, web_title, trail_text, body
+  )) %>%
+  mutate(id = row_number()) %>%
+  write_csv("episodes/data/trump.csv")
