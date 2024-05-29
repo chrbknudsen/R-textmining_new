@@ -38,3 +38,4 @@ po/*~
 renv/sandbox # OPTIONAL
 secrets.txt
 scratchpad.R
+R-textmining_new.Rproj
