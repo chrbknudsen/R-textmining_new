@@ -17,5 +17,5 @@ obama <- guardianapi::gu_content(query = "Obama", from_date = "2009-01-20", to_d
 trump <- guardianapi::gu_content(query = "Trump", from_date = "2017-01-20", to_date = "2017-01-20")
 
 trump %>% write_csv("episodes/data/trump.csv")
+view(trump)
 
-oprensning
