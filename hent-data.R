@@ -33,13 +33,11 @@ obama %>%
 
 
 
-#bush
+#trump
 
 trump <- guardianapi::gu_content(query = "Trump", from_date = "2017-01-20", to_date = "2017-01-20")
  
-
-midlertidig <- 
-  trump %>% 
+trump %>% 
   filter(!(type %in% c("gallery", "audio", "video", "liveblog"))) %>% 
   filter(!(section_id %in% c("tv-and-radio", 
                              "film",
@@ -54,12 +52,7 @@ midlertidig <-
                              "artanddesign",
                              "books",
                              "fashion"))) %>% 
-   select(-c(type, section_name, web_url, api_url, 
-            tags, is_hosted, pillar_id, main, wordcount,
-            production_office, is_premoderated,
-            last_modified:show_in_related_content,
-            thumbnail:is_live, char_count:comment_close_date,
-            section_id, web_title, trail_text, body
-  )) %>%
+   select(c(id, web_publication_date, pillar_name, headline, 
+   standfirst, body_text)) %>%
   mutate(id = row_number()) %>%
   write_csv("episodes/data/trump.csv")
