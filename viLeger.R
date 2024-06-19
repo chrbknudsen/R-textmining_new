@@ -25,6 +25,8 @@ obamaTrump <- obama %>%
   mutate(text = str_c(headline, standfirst, body_text, sep = " "), .after = president) %>% 
   select(-c(headline, standfirst, body_text))
 
+write_csv(obamaTrump, "episodes/data/obamaTrump.csv")
+
 
 # tokenization ------------------------------------------------------------
 
